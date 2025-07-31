@@ -34,3 +34,8 @@ let hasPermission = false;
 // Other types we'll cover later:
 let nothing = null;
 let notDefinedYet = undefined;
+//Three Declaration Keywords
+let counter = 0;       // Declaration + initialization
+counter = 1;          // Reassignment allowed
+let message;          // Declaration without value (undefined)
+message = "Hello";    // Later assignment

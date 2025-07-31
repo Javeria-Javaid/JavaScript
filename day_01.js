@@ -53,3 +53,45 @@ user.name = "Taylor";  // ✅ Allowed!
 var oldVariable = 10;
 oldVariable = 20;     // Reassignment allowed
 var oldVariable = 30; // ❗ Redeclaration allowed (unlike let/const)
+
+// -- Declaration Patterns --
+// 1. Multiple Declarations
+// Single-line multiple declarations
+let a = 1, b = 2, c = 3;
+
+// Multi-line for readability
+const firstName = "Jordan",
+    lastName = "Smith",
+    age = 28;
+// 2.Destructuring Assignment
+// Array destructuring
+let [x, y] = [10, 20];  // x=10, y=20
+
+// 3.Object destructuring
+const {name, age} = {name: "Sam", age: 24};
+// 4.Scope in Depth
+// - Block Scope (let/const)
+{
+    let secret = "I'm hidden";
+    console.log(secret); // ✅ Works
+}
+console.log(secret); // ❌ ReferenceError
+
+// - Function Scope (var)
+function test() {
+    var insideFunction = true;
+}
+console.log(insideFunction); // ❌ Error
+
+// - Global Scope
+let globalLet = "I'm global";
+var globalVar = "Me too";
+
+// (Both accessible anywhere in the script)
+// 4. Temporal Dead Zone (TDZ)
+// ( for let and const)
+console.log(myLet); // ❌ ReferenceError (TDZ)
+let myLet = "value";
+
+console.log(myVar); // ✅ undefined (var is hoisted)
+var myVar = "value";

@@ -35,7 +35,16 @@ let hasPermission = false;
 let nothing = null;
 let notDefinedYet = undefined;
 //Three Declaration Keywords
+//The Modern Variable
 let counter = 0;       // Declaration + initialization
 counter = 1;          // Reassignment allowed
 let message;          // Declaration without value (undefined)
 message = "Hello";    // Later assignment
+
+const PI = 3.14159;    // Must initialize during declaration
+PI = 3.14;             // ❌ Error! Cannot reassign
+const user = {         // For objects/arrays...
+    name: "Alex"       // ...properties CAN be modified
+};
+user.name = "Taylor";  // ✅ Allowed!
+

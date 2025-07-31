@@ -34,13 +34,14 @@ let hasPermission = false;
 // Other types we'll cover later:
 let nothing = null;
 let notDefinedYet = undefined;
-//Three Declaration Keywords
+
+// -- Three Declaration Keywords --
 //The Modern Variable
 let counter = 0;       // Declaration + initialization
 counter = 1;          // Reassignment allowed
 let message;          // Declaration without value (undefined)
 message = "Hello";    // Later assignment
-
+//The Constant
 const PI = 3.14159;    // Must initialize during declaration
 PI = 3.14;             // ❌ Error! Cannot reassign
 const user = {         // For objects/arrays...
@@ -48,3 +49,7 @@ const user = {         // For objects/arrays...
 };
 user.name = "Taylor";  // ✅ Allowed!
 
+//var -The Legacy Variable
+var oldVariable = 10;
+oldVariable = 20;     // Reassignment allowed
+var oldVariable = 30; // ❗ Redeclaration allowed (unlike let/const)

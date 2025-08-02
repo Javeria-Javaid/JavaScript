@@ -51,3 +51,17 @@ let canVote = age >= 18 && hasID; // ?
 let isAdmin = false;
 let isLoggedIn = true;
 let accessGranted = isAdmin || isLoggedIn; // ?
+
+let isRaining = true;
+let isSunny = false;
+console.log(!isRaining);      // ?
+console.log(isRaining && !isSunny); // ?
+
+let a = 5;
+let b = 10;
+let c = "5";
+let result = (a == c) && (b > a) || (a === c); // ?
+
+let x = 10;
+let y = 20;
+let output = (x < y) && (y !== 20) || (x + y === 30); // ?

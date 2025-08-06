@@ -70,3 +70,6 @@ let output = (x < y) && (y !== 20) || (x + y === 30); // ?
 let age = 20;
 let canVote = (age >= 18) ? "Yes" : "No";
 console.log(canVote); // "Yes"
+//Type Checking Operators
+console.log(typeof 42); // "number"
+console.log([] instanceof Array); // true

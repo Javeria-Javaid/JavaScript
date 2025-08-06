@@ -65,3 +65,8 @@ let result = (a == c) && (b > a) || (a === c); // ?
 let x = 10;
 let y = 20;
 let output = (x < y) && (y !== 20) || (x + y === 30); // ?
+
+//Ternary Operator
+let age = 20;
+let canVote = (age >= 18) ? "Yes" : "No";
+console.log(canVote); // "Yes"

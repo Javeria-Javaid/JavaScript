@@ -79,3 +79,21 @@ map(), filter(), reduce()
 find(), some(), every()
 slice(), splice()
  */
+//3. Objects & JSON
+const person = {
+    name: 'Alex',
+    age: 30,
+    hobbies: ['coding', 'gaming']
+};
+
+// Accessing properties
+console.log(person.name);  // Dot notation
+console.log(person['age']); // Bracket notation
+
+// Practice: Create a book object with title/author/year
+/*
+Object literals
+Methods (functions in objects)
+JSON.stringify() and JSON.parse()
+ */
+

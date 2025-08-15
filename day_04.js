@@ -103,4 +103,21 @@ JSON.stringify() and JSON.parse()
     alert('Button clicked!');
 });
 </script>
+//5. Asynchronous JavaScript
+// Fetch API example
+fetch('https://api.example.com/data')
+    .then(response => response.json())
+    .then(data => console.log(data));
 
+// Async/await version
+async function fetchData() {
+    const response = await fetch('url');
+    const data = await response.json();
+    return data;
+}
+/*
+Callbacks
+Promises
+Async/await
+Error handling
+ */

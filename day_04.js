@@ -46,3 +46,20 @@ while (i <= 100) {
     console.log(output || i);
     i++;
 }
+//Functions (The Building Blocks)
+// Basic function
+function greet(name) {
+    return `Hello, ${name}!`;
+}
+
+// Arrow function (modern)
+const add = (a, b) => a + b;
+/*
+Parameters vs arguments
+Return values
+Function scope
+Arrow functions vs regular functions
+ */
+
+
+// Practice: Create a function that checks if a number is prime

@@ -96,4 +96,11 @@ Object literals
 Methods (functions in objects)
 JSON.stringify() and JSON.parse()
  */
+//4. DOM Manipulation (Web Interaction)
+<button id="myBtn">Click Me</button>
+<script>
+    document.getElementById('myBtn').addEventListener('click', () => {
+    alert('Button clicked!');
+});
+</script>
 

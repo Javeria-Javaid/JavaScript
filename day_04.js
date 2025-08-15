@@ -1,17 +1,17 @@
 //Practice questions
 /*
-Create variables for:
+1.Create variables for:
    - Your favorite book (string)
    - Its publication year (number)
    - Whether you've read it (boolean)
+2. Write a program that:
+   - Takes a number input
+   - Outputs "Even" or "Odd"
 
-
-
-
+3. Modify FizzBuzz to:
+   - Use a while loop instead
+   - Add "Zap" for multiples of 7
  */
-
-
-
 
 // ===== TASK 1: BOOK VARIABLES =====
 const favoriteBook = "The Hitchhiker's Guide to the Galaxy";
@@ -21,3 +21,28 @@ const hasRead = true;
 console.log(`My favorite book: ${favoriteBook}`);
 console.log(`Published in: ${publicationYear}`);
 console.log(`Have I read it? ${hasRead ? 'Yes' : 'No'}`);
+
+// ===== TASK 2: EVEN/ODD CHECKER =====
+function checkEvenOdd(number) {
+    // Using ternary operator to determine even/odd
+    return number % 2 === 0 ? "Even" : "Odd";
+}
+
+// Example usage:
+const testNumber = 7;
+console.log(`${testNumber} is ${checkEvenOdd(testNumber)}`);
+
+// ===== TASK 3: MODIFIED FIZZBUZZ =====
+let i = 1;
+while (i <= 100) {
+    let output = "";
+
+    // Check for multiples
+    if (i % 3 === 0) output += "Fizz";
+    if (i % 5 === 0) output += "Buzz";
+    if (i % 7 === 0) output += "Zap";
+
+    // Output the result or the number
+    console.log(output || i);
+    i++;
+}

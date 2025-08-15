@@ -46,7 +46,7 @@ while (i <= 100) {
     console.log(output || i);
     i++;
 }
-//Functions (The Building Blocks)
+//1.Functions (The Building Blocks)
 // Basic function
 function greet(name) {
     return `Hello, ${name}!`;
@@ -63,3 +63,19 @@ Arrow functions vs regular functions
 
 
 // Practice: Create a function that checks if a number is prime
+//2. Arrays & Array Methods
+const fruits = ['apple', 'banana', 'orange'];
+
+// Essential methods:
+fruits.push('grape');      // Add to end
+fruits.pop();              // Remove from end
+fruits.map(fruit => fruit.toUpperCase()); // Transform
+
+// Practice: Create a shopping list manager with add/remove functions
+
+/*
+Key Methods:
+map(), filter(), reduce()
+find(), some(), every()
+slice(), splice()
+ */

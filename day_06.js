@@ -75,3 +75,20 @@ function testScope() {
 testScope();
 console.log(globalVar); // Accessible
 // console.log(localVar); // ❌ Error - not accessible outside
+//8. Practical Examples
+// Temperature converter
+function celsiusToFahrenheit(celsius) {
+    return (celsius * 9/5) + 32;
+}
+
+// Password validator
+function isValidPassword(password) {
+    return password.length >= 8 &&
+        /[A-Z]/.test(password) &&
+        /[0-9]/.test(password);
+}
+
+// Shopping cart calculator
+function calculateTotal(items) {
+    return items.reduce((total, item) => total + item.price, 0);
+}

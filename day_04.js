@@ -100,8 +100,9 @@ JSON.stringify() and JSON.parse()
 <button id="myBtn">Click Me</button>
 <script>
     document.getElementById('myBtn').addEventListener('click', () => {
-    alert('Button clicked!');
+alert('Button clicked!')
 });
+
 </script>
 //5. Asynchronous JavaScript
 // Fetch API example

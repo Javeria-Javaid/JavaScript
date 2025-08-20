@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Testing Events</title>
+</head>
+<body>
+<button id="myButton">Click me</button>
+<p id="p2">This text will turn blue</p>
+<button onClick="document.getElementById('p2').style.color='blue';">Click me</button>
+<button onclick="document.getElementById('btn').style.color='green';">Sign In</button>
+<p id="btn">Welcome user!</p>
+<button onclick="document.getElementById('size').style.fontSize='25px';">Increase Size</button>
+<p id="size">Increasing font size using JS</p>
+<button onclick="document.getElementById('img1').style.height='50px';">Increase height</button>
+<img id="img1" src="pakistan.png">
+<button onclick="document.getElementById('p2').innerHTML='text changed';">Change text</button>
+<button onclick="document.getElementById('img1').src='world.png';">Change img</button>
+
+<script>
+    document.getElementById('myButton').addEventListener('click', function () {
+        document.getElementById('p').style.color = 'blue';
+    });
+
+</script>
+</body>
+</html>

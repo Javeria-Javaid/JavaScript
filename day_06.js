@@ -46,3 +46,20 @@ function createMessage(name, message = "Welcome!") {
 
 console.log(createMessage("Mike")); // "Mike, Welcome!"
 console.log(createMessage("Sarah", "How are you?")); // "Sarah, How are you?"
+
+//6. Return Values
+// Functions can return any data type
+function getRandomNumber() {
+    return Math.floor(Math.random() * 100);
+}
+
+function createPerson(name, age) {
+    return {
+        name,
+        age,
+        isAdult: age >= 18
+    };
+}
+
+const randomNum = getRandomNumber();
+const person = createPerson("Tom", 25);

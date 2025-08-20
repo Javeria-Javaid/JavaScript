@@ -38,3 +38,11 @@ function createUser(username, email) {
 // Arguments are the actual values passed
 const user1 = createUser("john_doe", "john@example.com");
 const user2 = createUser("jane_smith", "jane@example.com");
+// 5. Default Parameters
+// Default values if no argument provided
+function createMessage(name, message = "Welcome!") {
+    return `${name}, ${message}`;
+}
+
+console.log(createMessage("Mike")); // "Mike, Welcome!"
+console.log(createMessage("Sarah", "How are you?")); // "Sarah, How are you?"

@@ -114,3 +114,28 @@ Bill: $${tipResult.bill}
 Tip (${tipResult.tipPercent}%): $${tipResult.tip.toFixed(2)}
 Total: $${tipResult.total.toFixed(2)}
 `);
+//practice questions
+//1. Reverse String Function
+// Solution 1: Using built-in methods
+function reverseString(str) {
+    return str.split('').reverse().join('');
+}
+
+// Solution 2: Using a loop
+function reverseStringLoop(str) {
+    let reversed = '';
+    for (let i = str.length - 1; i >= 0; i--) {
+        reversed += str[i];
+    }
+    return reversed;
+}
+
+// Solution 3: Using array methods
+function reverseStringModern(str) {
+    return [...str].reverse().join('');
+}
+
+// Test cases
+console.log(reverseString("hello"));        // "olleh"
+console.log(reverseString("javascript"));   // "tpircsavaj"
+console.log(reverseString(""));             // ""

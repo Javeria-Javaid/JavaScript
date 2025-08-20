@@ -92,3 +92,25 @@ function isValidPassword(password) {
 function calculateTotal(items) {
     return items.reduce((total, item) => total + item.price, 0);
 }
+// Mini-Project:  Calculator
+function calculateTip(billAmount, tipPercentage = 15) {
+    const tipAmount = billAmount * (tipPercentage / 100);
+    const totalAmount = billAmount + tipAmount;
+
+    return {
+        bill: billAmount,
+        tip: tipAmount,
+        total: totalAmount,
+        tipPercent: tipPercentage
+    };
+}
+
+// Usage
+const dinnerBill = 75;
+const tipResult = calculateTip(dinnerBill, 20);
+
+console.log(`
+Bill: $${tipResult.bill}
+Tip (${tipResult.tipPercent}%): $${tipResult.tip.toFixed(2)}
+Total: $${tipResult.total.toFixed(2)}
+`);

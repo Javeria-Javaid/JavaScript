@@ -139,3 +139,38 @@ function reverseStringModern(str) {
 console.log(reverseString("hello"));        // "olleh"
 console.log(reverseString("javascript"));   // "tpircsavaj"
 console.log(reverseString(""));             // ""
+
+
+//2. Prime Number Checker
+// Solution 1: Basic prime checker
+function isPrime(number) {
+    if (number <= 1) return false;
+    if (number <= 3) return true;
+    if (number % 2 === 0 || number % 3 === 0) return false;
+
+    for (let i = 5; i * i <= number; i += 6) {
+        if (number % i === 0 || number % (i + 2) === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+// Solution 2: More readable version
+function isPrimeSimple(n) {
+    if (n < 2) return false;
+
+    for (let i = 2; i <= Math.sqrt(n); i++) {
+        if (n % i === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+// Test cases
+console.log(isPrime(7));    // true
+console.log(isPrime(10));   // false
+console.log(isPrime(17));   // true
+console.log(isPrime(1));    // false
+console.log(isPrime(2));    // true

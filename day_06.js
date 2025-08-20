@@ -63,3 +63,15 @@ function createPerson(name, age) {
 
 const randomNum = getRandomNumber();
 const person = createPerson("Tom", 25);
+//7. Scope in Functions
+let globalVar = "I'm global";
+
+function testScope() {
+    let localVar = "I'm local";
+    console.log(globalVar); // Accessible
+    console.log(localVar);  // Accessible
+}
+
+testScope();
+console.log(globalVar); // Accessible
+// console.log(localVar); // ❌ Error - not accessible outside

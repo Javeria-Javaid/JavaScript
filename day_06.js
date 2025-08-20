@@ -174,3 +174,28 @@ console.log(isPrime(10));   // false
 console.log(isPrime(17));   // true
 console.log(isPrime(1));    // false
 console.log(isPrime(2));    // true
+
+// Name Formatter
+
+// Solution 1: Basic formatting
+function formatName(firstName, lastName) {
+    const formattedFirst = firstName.charAt(0).toUpperCase() + firstName.slice(1).toLowerCase();
+    const formattedLast = lastName.charAt(0).toUpperCase() + lastName.slice(1).toLowerCase();
+    return `${formattedFirst} ${formattedLast}`;
+}
+
+// Solution 2: More robust version
+function formatNameAdvanced(firstName, lastName) {
+    const capitalize = (str) => {
+        if (!str) return '';
+        return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+    };
+
+    return `${capitalize(firstName)} ${capitalize(lastName)}`.trim();
+}
+
+// Test cases
+console.log(formatName("john", "doe"));         // "John Doe"
+console.log(formatName("JANE", "SMITH"));       // "Jane Smith"
+console.log(formatName("mArY", "jOnEs"));       // "Mary Jones"
+console.log(formatNameAdvanced("", "smith"));   // "Smith"

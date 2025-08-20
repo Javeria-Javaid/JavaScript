@@ -17,7 +17,7 @@ const calculateArea = function(width, height) {
 };
 
 console.log(calculateArea(5, 3)); // 15
-//3. Arrow Functions (ES6+)
+//3. Arrow Functions 
 // Compact syntax
 const add = (a, b) => a + b;
 

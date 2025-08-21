@@ -11,3 +11,5 @@ const mixed = [1, 'hello', true, null];       // Mixed data types
 
 console.log(fruits[0]); // "apple" (zero-based indexing)
 console.log(fruits[2]); // "orange"
+
+// 2. Basic Array Methods

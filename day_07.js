@@ -13,3 +13,19 @@ console.log(fruits[0]); // "apple" (zero-based indexing)
 console.log(fruits[2]); // "orange"
 
 // 2. Basic Array Methods
+const colors = ['red', 'green'];
+
+// Add to end
+colors.push('blue');      // ['red', 'green', 'blue']
+
+// Remove from end
+colors.pop();             // ['red', 'green']
+
+// Add to beginning
+colors.unshift('yellow'); // ['yellow', 'red', 'green']
+
+// Remove from beginning
+colors.shift();           // ['red', 'green']
+
+// Find length
+console.log(colors.length); // 2

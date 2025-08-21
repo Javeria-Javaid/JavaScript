@@ -69,3 +69,20 @@ const cart = [
 ];
 const total = cart.reduce((sum, product) => sum + product.price, 0);
 console.log(total); // 26
+//Other Useful Methods
+const numbers = [1, 2, 3, 4, 5];
+
+// find() - find first matching element
+const firstEven = numbers.find(num => num % 2 === 0);
+console.log(firstEven); // 2
+
+// some() - check if at least one element meets condition
+const hasEven = numbers.some(num => num % 2 === 0);
+console.log(hasEven); // true
+
+// every() - check if all elements meet condition
+const allEven = numbers.every(num => num % 2 === 0);
+console.log(allEven); // false
+
+// includes() - check if array contains value
+console.log(numbers.includes(3)); // true

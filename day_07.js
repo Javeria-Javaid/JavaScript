@@ -86,3 +86,21 @@ console.log(allEven); // false
 
 // includes() - check if array contains value
 console.log(numbers.includes(3)); // true
+
+//Manipulating Arrays
+let fruits = ['apple', 'banana', 'orange', 'grape'];
+
+// slice() - copy portion of array
+const citrus = fruits.slice(1, 3); // ['banana', 'orange']
+console.log(fruits); // Original unchanged
+
+// splice() - add/remove elements (modifies original)
+fruits.splice(1, 2, 'mango', 'pineapple');
+console.log(fruits); // ['apple', 'mango', 'pineapple', 'grape']
+
+// concat() - combine arrays
+const moreFruits = ['kiwi', 'melon'];
+const allFruits = fruits.concat(moreFruits);
+console.log(allFruits);
+
+//

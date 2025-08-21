@@ -103,4 +103,31 @@ const moreFruits = ['kiwi', 'melon'];
 const allFruits = fruits.concat(moreFruits);
 console.log(allFruits);
 
-//
+//Practical Project: Todo List Manager
+// Simple todo list implementation
+let todos = [];
+
+function addTodo(task) {
+    todos.push({ task, completed: false, id: Date.now() });
+}
+
+function completeTodo(id) {
+    const todo = todos.find(todo => todo.id === id);
+    if (todo) todo.completed = true;
+}
+
+function deleteTodo(id) {
+    todos = todos.filter(todo => todo.id !== id);
+}
+
+function getPendingTodos() {
+    return todos.filter(todo => !todo.completed);
+}
+
+// Usage
+addTodo('Learn JavaScript arrays');
+addTodo('Build a project');
+addTodo('Practice array methods');
+
+completeTodo(todos[0].id);
+console.log(getPendingTodos());

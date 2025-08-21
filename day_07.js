@@ -29,3 +29,14 @@ colors.shift();           // ['red', 'green']
 
 // Find length
 console.log(colors.length); // 2
+// 3.  Essential Array Methods (Modern JavaScript)
+const numbers = [1, 2, 3, 4];
+const doubled = numbers.map(num => num * 2);
+console.log(doubled); // [2, 4, 6, 8]
+
+// Practical example: Format names
+const names = ['john', 'jane', 'mike'];
+const capitalized = names.map(name =>
+    name.charAt(0).toUpperCase() + name.slice(1)
+);
+console.log(capitalized); // ['John', 'Jane', 'Mike']

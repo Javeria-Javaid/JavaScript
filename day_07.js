@@ -55,3 +55,17 @@ const products = [
 ];
 const affordable = products.filter(product => product.price < 100);
 console.log(affordable); // Mouse and Keyboard only
+
+//reduce() - Accumulate values
+const numbers = [1, 2, 3, 4];
+const sum = numbers.reduce((total, num) => total + num, 0);
+console.log(sum); // 10
+
+// Practical example: Shopping cart total
+const cart = [
+    { item: 'Book', price: 15 },
+    { item: 'Pen', price: 3 },
+    { item: 'Notebook', price: 8 }
+];
+const total = cart.reduce((sum, product) => sum + product.price, 0);
+console.log(total); // 26

@@ -24,3 +24,22 @@ const user = {
     }
 };
 //2. Accessing Properties
+const book = {
+    title: "JavaScript Basics",
+    author: "Jane Doe",
+    pages: 200,
+    isAvailable: true
+};
+
+// Dot notation
+console.log(book.title);    // "JavaScript Basics"
+console.log(book.pages);    // 200
+
+// Bracket notation (useful for dynamic keys)
+const key = "author";
+console.log(book[key]);     // "Jane Doe"
+console.log(book["isAvailable"]); // true
+
+// Nested object access
+console.log(user.address.city); // "Techville"
+

@@ -118,3 +118,30 @@ console.log(student.hasOwnProperty("grade")); // true
 
 // Copy object (spread operator)
 const studentCopy = { ...student };
+
+//7. Destructuring Objects
+const user = {
+    username: "coder123",
+    email: "coder@example.com",
+    preferences: {
+        theme: "dark",
+        notifications: true
+    }
+};
+
+// Extract properties
+const { username, email } = user;
+console.log(username); // "coder123"
+
+// Rename variables during extraction
+const { username: userName, email: userEmail } = user;
+
+// Nested destructuring
+const { preferences: { theme, notifications } } = user;
+console.log(theme); // "dark"
+
+// Function parameter destructuring
+function displayUser({ username, email }) {
+    console.log(`User: ${username}, Email: ${email}`);
+}
+displayUser(user);

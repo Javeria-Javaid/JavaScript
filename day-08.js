@@ -23,3 +23,4 @@ const user = {
         zipCode: "12345"
     }
 };
+//2. Accessing Properties

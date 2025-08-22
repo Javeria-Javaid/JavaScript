@@ -43,3 +43,20 @@ console.log(book["isAvailable"]); // true
 // Nested object access
 console.log(user.address.city); // "Techville"
 
+//3. Adding & Modifying Properties
+const car = {
+    make: "Toyota",
+    model: "Camry"
+};
+
+// Add new properties
+car.year = 2020;
+car.color = "blue";
+car["price"] = 25000;
+
+// Modify existing properties
+car.color = "red";
+car["price"] = 23000;
+
+console.log(car);
+// { make: "Toyota", model: "Camry", year: 2020, color: "red", price: 23000 }

@@ -79,3 +79,20 @@ const calculator = {
 console.log(calculator.add(5, 3));      // 8
 console.log(calculator.multiply(4, 2)); // 8
 
+//5. The 'this' Keyword
+const person = {
+    name: "John",
+    age: 25,
+    greet: function() {
+        return `Hello, my name is ${this.name} and I'm ${this.age} years old.`;
+    },
+    birthday() {
+        this.age++;
+        return `Happy birthday! Now I'm ${this.age}.`;
+    }
+};
+
+console.log(person.greet());    // "Hello, my name is John..."
+console.log(person.birthday()); // "Happy birthday! Now I'm 26."
+
+//

@@ -95,4 +95,26 @@ const person = {
 console.log(person.greet());    // "Hello, my name is John..."
 console.log(person.birthday()); // "Happy birthday! Now I'm 26."
 
-//
+//6. Useful Object Methods
+const student = {
+    name: "Emma",
+    grade: "A",
+    subjects: ["Math", "Science", "English"]
+};
+
+// Get all keys
+console.log(Object.keys(student)); // ["name", "grade", "subjects"]
+
+// Get all values
+console.log(Object.values(student)); // ["Emma", "A", ["Math", "Science", "English"]]
+
+// Get key-value pairs
+console.log(Object.entries(student));
+// [ ["name", "Emma"], ["grade", "A"], ["subjects", Array(3)] ]
+
+// Check if property exists
+console.log("name" in student);    // true
+console.log(student.hasOwnProperty("grade")); // true
+
+// Copy object (spread operator)
+const studentCopy = { ...student };

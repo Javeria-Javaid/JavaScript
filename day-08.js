@@ -145,3 +145,33 @@ function displayUser({ username, email }) {
     console.log(`User: ${username}, Email: ${email}`);
 }
 displayUser(user);
+
+//8. Practical Example: E-commerce Product
+const product = {
+    id: 101,
+    name: "Wireless Headphones",
+    price: 89.99,
+    brand: "AudioTech",
+    inStock: true,
+    features: ["Bluetooth", "Noise Cancellation", "20hr Battery"],
+    specifications: {
+        weight: "250g",
+        connectivity: "Bluetooth 5.0",
+        battery: "2000mAh"
+    },
+    calculateDiscount(percent) {
+        const discount = this.price * (percent / 100);
+        return this.price - discount;
+    },
+    displayInfo() {
+        return `
+        Product: ${this.name}
+        Brand: ${this.brand}
+        Price: $${this.price}
+        Features: ${this.features.join(", ")}
+        `;
+    }
+};
+
+console.log(product.calculateDiscount(15)); // 76.49
+console.log(product.displayInfo());

@@ -60,3 +60,22 @@ car["price"] = 23000;
 
 console.log(car);
 // { make: "Toyota", model: "Camry", year: 2020, color: "red", price: 23000 }
+
+//4. Methods (Functions in Objects)
+const calculator = {
+    add: function(a, b) {
+        return a + b;
+    },
+    subtract(a, b) {  // Shorthand method syntax
+        return a - b;
+    },
+    multiply: (a, b) => a * b,  // Arrow function
+    divide(a, b) {
+        if (b === 0) return "Cannot divide by zero!";
+        return a / b;
+    }
+};
+
+console.log(calculator.add(5, 3));      // 8
+console.log(calculator.multiply(4, 2)); // 8
+
